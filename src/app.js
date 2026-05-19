@@ -159,6 +159,7 @@ class TodoApp {
 }
 
 // Initialize the app when DOM is loaded
+// deno-lint-ignore no-window-prefix
 let app;
 document.addEventListener('DOMContentLoaded', () => {
     app = new TodoApp();
