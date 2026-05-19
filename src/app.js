@@ -159,10 +159,9 @@ class TodoApp {
 }
 
 // Initialize the app when DOM is loaded
-// deno-lint-ignore no-unused-vars
-let _app;
+let app;
 document.addEventListener('DOMContentLoaded', () => {
-    _app = new TodoApp();
+    app = new TodoApp();
     // Make app available globally for inline event handlers
-    window.app = _app;
+    globalThis.app = app;
 });
